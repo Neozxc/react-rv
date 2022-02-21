@@ -1,9 +1,12 @@
-import logo from './logo.svg';
+// Imports
+// import React from "react";
+import { useState } from 'react';
 import './App.css';
 
+// Setup
 const App = () => {
   return (
-    <div>
+    <div className='App'>
       <h1>Hello</h1>
     </div>
   );
