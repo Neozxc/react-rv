@@ -1,6 +1,7 @@
 // Imports
 // import React from "react";
 import { useState } from 'react';
+import { PostCreater } from './components/postCreater';
 import './App.css';
 
 // Setup
@@ -28,6 +29,7 @@ const App = () => {
       { user ? <h1>Welcome, {user}</h1> : <h1>No user found...</h1> }
       {/* Take users input */}
       <input onChange={(e) => setUser(e.target.value)}></input>
+      <PostCreater setPostContent={setPostContent} setList={list} submitHandler={submitHandler} />
       {/* Map */}
       <div>
         { list.map((item, index) => <h2 key={index}>{item}</h2>) }

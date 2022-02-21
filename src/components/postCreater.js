@@ -1,4 +1,4 @@
-export const PostCreater = () => {
+export const PostCreater = ({setPostContent, submitHandler}) => {
     return (
     <div>
         <form onSubmit={submitHandler}>
